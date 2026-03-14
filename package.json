@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "next build && touch out/.nojekyll && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "next": "16.1.6",
@@ -17,7 +18,9 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^4",
     "typescript": "^5"
-  }
+  },
+  "homepage": "https://start.activemirror.ai"
 }
